@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Menú Lateral con CSS</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="btn-menu">
+				<label for="btn-menu">☰</label>
+			</div>
+		</div>
+	</header>
+
+	<input type="checkbox" id="btn-menu">
+	<div class="container-menu">
+		<div class="cont-menu">
+			<nav>
+        <input type="checkbox" id="btn-a">
+        <label for="btn-a">Inicio</label>
+				<div class="sub-menu-a">
+					<ul>
+						<li><a href="#">subopción 1</a></li>
+						<li><a href="#">subopción 2</a></li>
+						<li><a href="#">subopción 3</a></li>
+					</ul>
+				</div>
+
+        <input type="checkbox" id="btn-b">
+        <label  for="btn-b">Enviar</label>
+				<div class="sub-menu-b">
+					<ul>
+						<li><a href="#">Enviar Documentación</a></li>
+						<li><a href="#">Enviar un Paquete</a></li>
+						<li><a href="#">Envio Internacional</a></li>
+					</ul>
+				</div>
+
+        <input type="checkbox" id="btn-c">
+        <label for="btn-c">Seguir</label>
+				<div class="sub-menu-c">
+					<ul>
+            <li><a href="#">Seguir Envios</a></li>
+            <li><a href="#">Internacional</a></li>
+            <li><a href="#">Sucursales de Retiro</a></li>
+					</ul>
+				</div>
+
+        <input type="checkbox" id="btn-d">
+        <label for="btn-d">Contacto</label>
+				<div class="sub-menu-d">
+					<ul>
+            <li><a href="form/form.php">Mensajes</a></li>
+            <li><a href="#">Redes Sociales</a></li>
+            <li><a href="#">Teléfono</a></li>
+					</ul>
+				</div>
+			</nav>
+			<label class="label" for="btn-menu">✖️</label>
+		</div>
+	</div>
+
+
+  <style>
+.sub-menu-a, .sub-menu-b, .sub-menu-c, .sub-menu-d {
+  display: none;
+
+
+}
+
+.sub-menu-a ul li a, .sub-menu-b ul li a, .sub-menu-c ul li a, .sub-menu-d ul li a {
+  font-size: 40px;
+  border: none;
+}
+
+#btn-a:checked ~ .sub-menu-a,
+#btn-b:checked ~ .sub-menu-b,
+#btn-c:checked ~ .sub-menu-c,
+#btn-d:checked ~ .sub-menu-d {
+  display: block;
+
+}
+
+
+
+
+
+
+nav label {
+  display: block;
+  padding: 0.5em;
+  background-color: 1c1c1c;
+  cursor: pointer;
+  font-size: 40px;
+  color: white;
+}
+
+nav input[type="checkbox"] {
+  display: none;
+}
+
+
+  </style>
+</body>
+</html>

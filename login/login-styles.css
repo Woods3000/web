@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: url(../img/img.jpg) no-repeat center top;
+    background-size: cover;
+
+}
+
+
+
+.back a {
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    font-size: 22px;
+    text-decoration: none;
+    font-family: 'Ubuntu';
+    padding: 10px 20px;
+    border: 2px solid black;
+    font-weight: bold;
+    color: black;
+}
+
+.register a{
+    position: absolute;
+    top: 6%;
+    left: 86%;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Ubuntu';
+    font-size: 22px;
+}
+
+
+.login-box {
+    width: 320px;
+    height: 610px;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 70px 30px;
+ 
+}
+
+.login-box .avatar {
+    width: 130px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 68px);
+}
+
+.login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box h1 {
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-box .Login {
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #5b1923;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px; /* Crea una linea divisora */
+    color: white;
+    display: block;
+    padding-top: 7px;
+    font-size: 17px;
+
+}
+
+.bottom-info {
+    margin-top: 150px;
+}
+
+.login-box a:hover {
+    color: yellow;
+}
+
+.login-box .google {
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: rgb(47, 100, 255);
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 5px 30px;
+    position: absolute;
+    left: 35px;
+    margin-top: 8px;
+}
+
+.login-box .facebook {
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 5px 19px;
+    position: absolute;
+    left: 35px;
+    margin-top: 80px;
+} 
+
+
+
+
+
+

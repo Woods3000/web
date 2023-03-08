@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.back a{
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Ubuntu';
+    font-size: 22px;
+}
+
+.home a{
+    position: absolute;
+    top: 6%;
+    left: 89%;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Ubuntu';
+    font-size: 22px;
+}
+
+body {
+    background: url(../img/img.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+.register-box {
+    width: 320px;
+    height: 480px;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 70px 30px;
+}
+
+.register-box .avatar {
+    width: 130px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 68px);
+}
+
+.register-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.register-box h1 {
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.register-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.register-box input[type="text"],.register-box input[type="password"], .register-box input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.register-box input[type="submit"] {
+    margin-top: 15px;
+    border-radius: 40px;
+    border: 1px solid black;
+    height: 40px;
+    font-size: 18px;
+    background-color: #5b1923;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.register-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px; /* Crea una linea divisora */
+    color: white;
+    display: block;
+    padding-top: 7px;
+    font-size: 17px;
+}
+
+.register-box a:hover {
+    color: yellow;
+}
+
+
+.log-info {
+    color: white;
+    position: absolute;
+    top: 480px;
+    left: 620px;
+    z-index: 2;
+}

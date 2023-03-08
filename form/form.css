@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: sans-serif;
+	background-color: #f2f2f2;
+  }
+  
+  .container {
+	max-width: 800px;
+	margin: 50px auto;
+	background-color: white;
+	border-radius: 5px;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  form {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .input-wrapper {
+	position: relative;
+	margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-bottom: 2px solid #ccc;
+	font-size: 16px;
+  }
+
+  textarea {
+	height: calc(3 * 2em);
+  }
+  
+  
+  input:focus,
+  textarea:focus {
+	outline: none;
+	border-bottom-color: #6fa7ff;
+	padding-top: 15px;
+  }
+  
+  
+  input:focus::-webkit-input-placeholder,
+  textarea:focus::-webkit-input-placeholder,
+  input:not(:placeholder-shown)::-webkit-input-placeholder,
+  textarea:not(:placeholder-shown)::-webkit-input-placeholder {
+	transition: all 0.2s ease-out;
+	transform: translateY(-10px);
+	font-size: 12px;
+	color: #6fa7ff;
+  }
+  
+  input:focus::-moz-placeholder,
+  textarea:focus::-moz-placeholder,
+  input:not(:placeholder-shown)::-moz-placeholder,
+  textarea:not(:placeholder-shown)::-moz-placeholder {
+	transition: all 0.2s ease-out;
+	transform: translateY(-10px);
+	font-size: 12px;
+	color: #6fa7ff;
+  }
+  
+  input:focus:-ms-input-placeholder,
+  textarea:focus:-ms-input-placeholder,
+  input:not(:placeholder-shown):-ms-input-placeholder,
+  textarea:not(:placeholder-shown):-ms-input-placeholder {
+	transition: all 0.2s ease-out;
+	transform: translateY(-10px);
+	font-size: 12px;
+	color: #6fa7ff;
+  }
+  
+  input:focus::placeholder,
+  textarea:focus::placeholder,
+  input:not(:placeholder-shown)::placeholder,
+  textarea:not(:placeholder-shown)::placeholder {
+	transition: all 0.2s ease-out;
+	transform: translateY(-10px);
+	font-size: 12px;
+	color: #6fa7ff;
+  }
+  
+  button {
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	background-color: #6fa7ff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.2s ease-out;
+  }
+  
+  button:hover {
+	background-color: #1c7bff;
+  }
+  
+
+  
+
+
+  input:focus + .bar,
+  textarea:focus + .bar,
+  input:not(:placeholder-shown) + .bar,
+  textarea:not(:placeholder-shown) + .bar {
+	bottom: 5px;
+  }
+  
